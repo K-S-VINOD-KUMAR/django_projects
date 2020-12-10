@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-sm navbar-light" style="background-color: rgb(193, 231, 158);">
+  <!-- Brand -->
+  <a class="navbar-brand" href="{% url 'home' %}">Logo</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'home' %}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'about' %}">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'register' %}">Register</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'data' %}">Data</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'userregister' %}">Userregister</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'userdata' %}">userdata</a>
+    </li>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Trainings
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">SDC</a>
+        <a class="dropdown-item" href="#">NSDC</a>
+        <a class="dropdown-item" href="#">APSSDC</a>
+      </div>
+    </li>
+  </ul>
+</nav>

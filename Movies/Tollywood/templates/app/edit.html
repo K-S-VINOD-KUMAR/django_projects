@@ -1,0 +1,36 @@
+{% extends 'app/index.html' %}
+
+
+{% block body %}
+<br><br>
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-header">Register Movies</div>
+            <div class="card-body">
+                <form action="{% url 'update' data.id %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                      <label for="movie_name">Movie Name</label>
+                      <input type="text" class="form-control" placeholder="Enter movie name" name="moviename" value={{data.movie_name}} id="movie_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Select Movie_hero</label>
+                        <select class="form-control" id="sel1" name="hero">
+                          <option></option>
+                          <option>MaheshBabu</option>
+                          <option>Nagarjuna</option>
+                          <option>Chiru</option>
+                        </select>
+                        <br>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>                
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+
+{% endblock %}

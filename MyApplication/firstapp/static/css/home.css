@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(219, 207, 207);
+    text-align: center;
+}
+p{
+    color:rgb(2, 128, 44);
+    font-size:25px;
+    font-weight: bolder;
+}
+b{
+    font-size:40px;
+    color:rgb(214, 24, 24);
+    font-family:sans-serif;
+}
+img{
+    border:2px solid honeydew;
+    border-radius:50%;
+    box-shadow:2px 2px 2px 2px rgb(37, 8, 202);
+}

@@ -1,0 +1,25 @@
+{% extends 'app/index.html' %}
+
+{% block body %}
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-8">
+        <table class="table">
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Operations</th>
+            </tr>
+            {% for i in data %}
+            <tr>
+                <td>{{i.username}}</td>
+                <td>{{i.email}}</td>
+                <td><a href="{% url 'uedit' i.id %}" class="btn btn-primary">Edit</a> / <a href="{% url 'udelete' i.id %}" class="btn btn-danger">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}
